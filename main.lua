@@ -34,11 +34,13 @@ SMODS.load_file("jokers/grey.lua")()
 SMODS.load_file("consumables/gluttony.lua")()
 SMODS.load_file("consumables/glory.lua")()
 SMODS.load_file("consumables/summon_forth.lua")()
+SMODS.load_file("consumables/dying_star.lua")()
 
 
 -- Seals
 SMODS.load_file("seals/grey_seal.lua")()
 SMODS.load_file("seals/orange_seal.lua")()
+SMODS.load_file("seals/void_seal.lua")()
 
 local game_start_run_ref = Game.start_run
 function Game:start_run(args)
@@ -48,7 +50,7 @@ function Game:start_run(args)
       add_joker('j_tm_tasty_donut')
       add_joker('j_tm_his_majesty')
       add_joker('j_tm_grey')
-      local card = create_card('Spectral', G.consumeables, nil, nil, nil, nil, 'c_tm_gluttony')
+      local card = create_card('Spectral', G.consumeables, nil, nil, nil, nil, 'c_tm_dying_star')
       card:add_to_deck()
       G.consumeables:emplace(card)
       return true
