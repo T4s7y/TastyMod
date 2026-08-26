@@ -1,0 +1,11 @@
+{
+  "id": "TastyMod",
+  "name": "Tasty Mod",
+  "author": ["Tasty"],
+  "description": "WHAT",
+  "prefix": "tm",
+  "main_file": "main.lua",
+  "version": "1.0.0",
+  "priority": 0,
+  "badge_colour": "56a3f2"
+}
