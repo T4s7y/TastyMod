@@ -1,7 +1,14 @@
+## Bugs
+[] Bloodlust counter getting messed up when immolate is used<br>
+[] Make Grey and Rock Hard appear only when the respective cards are present<br>
+
+## Balance
+[] Maybe re work orange seals<br>
+
 ## Jokers
 [X] **Snowball**: +4$ at the end of round for each consecutive blind won with one hand.<br>
 [X] **Read Guard**: retrigger the last 2 played cards used in scoring one additional time<br>
-[X]] **Bleed From Within**: at the start of each round destroy a random card from your deck.<br>
+[X] **Bleed From Within**: at the start of each round destroy a random card from your deck.<br>
 [X] **Beer**: Sell this joker to obtain a discard for this round.<br>
 [X] **Alcoholic**: Gain a negative copy of **Beer** if played poker hand is [poker hand], poker hand changes each round.<br>
 [X] **Grey**: +1x mult for every grey seal in deck (Must have grey seal to appear).<br>
@@ -12,6 +19,7 @@
                  4 seals consumed: enchant 2 random jokers with **Negative**.<br>
                  >6 seals consumed: this joker gains xmult based on the seals consumed.<br>
                  (Must have void seal to appear).<br>   
+[] **XOR Gate**: X3 mult if the bit wise xor of scored cards is equal a random 4 bit string that changes each round<br>
 <br>
 ## Spectrals<br>
 [] **Glamour**: select up to 3 cards to enhance with a random enhancement.<br>
@@ -32,3 +40,5 @@ Used for new card enhancements to avoid conflict with tarot cards.<br>
 
 ## Scraps
 [] **Calcium**: Select 1 card to enchant with **Bone**<br>
+
+

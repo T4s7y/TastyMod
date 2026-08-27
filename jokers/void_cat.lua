@@ -21,7 +21,7 @@ SMODS.Joker {
       "{C:purple}4+ Seals:{} Add {C:dark_edition}Negative{} to 2 random Jokers",
       "{C:purple}6+ Seals:{} Gives {X:mult,C:white}X#1#{} Mult equal to",
       "the amount of seals consumed",
-      "{C:inactive}(Currently {X:mult,C:white}X#2#{} Mult{}"
+      "{C:inactive}(Currently {X:mult,C:white}X#2#{} Mult){}"
     }
   },
 
