@@ -17,7 +17,6 @@ SMODS.load_file("jokers/send_the_poor.lua")()
 SMODS.load_file("jokers/jack_the_ripper.lua")()
 SMODS.load_file("jokers/bloodlust.lua")()
 SMODS.load_file("jokers/tasty_donut.lua")()
-SMODS.load_file("jokers/time_alter.lua")()
 SMODS.load_file("jokers/medusa.lua")()
 SMODS.load_file("jokers/rock_hard.lua")()
 SMODS.load_file("jokers/la_pasion.lua")()
@@ -58,23 +57,3 @@ function Game:start_run(args)
   }))
 end
 
-local play_cards_ref = G.FUNCS.play_cards_from_highlighted
--- Timer Alter joker test
-G.FUNCS.play_cards_from_highlighted = function(e)
-  if next(SMODS.find_card('j_tm_time_alter')) then
-    local cards_to_draw = #G.hand.highlighted
-
-    play_cards_ref(e)
-
-    G.E_MANAGER:add_event(Event({
-      trigger = 'before',
-      delay = 0.1,
-      func = function()
-        G.FUNCS.draw_from_deck_to_hand(cards_to_draw)
-        return true
-      end
-    }))
-  else
-    play_cards_ref(e)
-  end
-end

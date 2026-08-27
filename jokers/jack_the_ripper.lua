@@ -10,7 +10,7 @@ SMODS.Joker {
     }
   },
   config = { extra = {} },
-  pos = { x = 1, y = 0 },
+  pos = { x = 0, y = 0 },
   rarity = 2,
   cost = 6,
   unlocked = true,
