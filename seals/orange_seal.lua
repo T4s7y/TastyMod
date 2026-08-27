@@ -13,8 +13,8 @@ SMODS.Seal {
     label = "Orange Seal",
     name = "Orange Seal",
     text = {
-      "Gives {C:money}+$1{}, {C:mult}+4{} Mult,",
-      "and {C:chips}+30{} Chips for each card",
+      "Gives {C:money}+$1{}, {C:mult}+3{} Mult,",
+      "and {C:chips}+20{} Chips for each card",
       "with an {C:attention}Orange Seal{} in your deck",
       "{C:inactive}(Currently {C:money}+$#1#{}, {C:mult}+#2#{} Mult, {C:chips}+#3#{} Chips)",
       "After beating the {C:attention}Boss Blind{}",
@@ -42,8 +42,8 @@ loc_vars = function(self, info_queue, card)
     return { 
       vars = {
         1 * seal_count,  
-        4 * seal_count,  
-        30 * seal_count  
+        3 * seal_count,  
+        20 * seal_count  
       } 
     }
   end,
@@ -62,8 +62,8 @@ loc_vars = function(self, info_queue, card)
       if seal_count > 0 then
         return {
           dollars = 1 * seal_count,
-          mult = 4 * seal_count,
-          chips = 30 * seal_count
+          mult = 3 * seal_count,
+          chips = 20 * seal_count
         }
       end
     end

@@ -3,10 +3,14 @@ SMODS.Consumable {
   key = "summon_forth",
   atlas = "tm_jokers",
   pos = { x = 0, y = 0 },
+  in_pool = function(self, args)
+    return false
+  end,
   loc_txt = {
     name = "Summon Forth",
     text = {
-      "Draw all cards with an {C:attention}Orange Seal{}"
+      "Draw all cards with an {C:attention}Orange Seal{}",
+      "into your {C:attention}hand{}"
     }
   },
   cost = 0,

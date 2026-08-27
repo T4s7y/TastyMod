@@ -17,11 +17,11 @@
 [] **Glamour**: select up to 3 cards to enhance with a random enhancement.<br>
 [X] **Summon Forth**: Draw all of your orange seal cards.<br>
 [X] **Glory**: select one 1 card to attach with an orange seal.<br>
-[] **Dying Star**: select 1 card to attach with a void seal.<br>
+[X] **Dying Star**: select 1 card to attach with a void seal.<br>
 
 ## Seals
 [X] **Orange Seal**: +1$ +4 mult +30 chips per orange seal in deck. At the start of each ante gain **Summon Forth**<br>
-[] **Void Seal**: 1 in 2 chance to create a random tarot card. 1 in 4 to create a random spectral (Must have room)<br>
+[X] **Void Seal**: 1 in 2 chance to create a random tarot card. 1 in 4 to create a random spectral (Must have room)<br>
 
 ## Enhancements
 [] **Bone**: Retrigger once for every other bone card used in scoring.<br>

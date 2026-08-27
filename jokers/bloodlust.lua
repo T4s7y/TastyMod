@@ -19,7 +19,7 @@ SMODS.Joker {
   eternal_compat = true,
 
   loc_vars = function(self, info_queue, card)
-    local destroyed_count = (G.GAME and G.GAME.cards_destroyed) or 0
+    local destroyed_count = (G.GAME and G.GAME.tm_cards_destroyed) or 0
     return { 
       vars = { 
         card.ability.extra.Xmult, 
@@ -31,7 +31,7 @@ SMODS.Joker {
 
   calculate = function(self, card, context)
     if context.joker_main then
-      local destroyed_count = (G.GAME and G.GAME.cards_destroyed) or 0
+      local destroyed_count = (G.GAME and G.GAME.tm_cards_destroyed) or 0
 
       if destroyed_count >= card.ability.extra.req then
         return {
@@ -40,5 +40,5 @@ SMODS.Joker {
         }
       end
     end
-  end,
+  end
 }

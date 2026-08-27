@@ -46,14 +46,32 @@ function Game:start_run(args)
   game_start_run_ref(self, args)
   G.E_MANAGER:add_event(Event({
     func = function()
-      add_joker('j_tm_tasty_donut')
-      add_joker('j_tm_his_majesty')
-      add_joker('j_tm_grey')
+      add_joker('j_tm_jack_the_ripper')
+      add_joker('j_tm_bloodlust')
+      add_joker('j_oops')
       local card = create_card('Spectral', G.consumeables, nil, nil, nil, nil, 'c_tm_dying_star')
       card:add_to_deck()
       G.consumeables:emplace(card)
       return true
     end
   }))
+end
+
+-- Track destroyed cards for Bloodlust
+local game_init_game_object_ref = Game.init_game_object
+function Game:init_game_object()
+  local g = game_init_game_object_ref(self)
+  g.tm_cards_destroyed = 0
+  return g
+end
+
+local card_remove_ref = Card.remove
+function Card:remove()
+  if self.added_to_deck and self.ability and self.ability.set == 'Default' or self.ability and self.ability.set == 'Enhanced' then
+    if G.GAME and G.GAME.tm_cards_destroyed then
+      G.GAME.tm_cards_destroyed = G.GAME.tm_cards_destroyed + 1
+    end
+  end
+  card_remove_ref(self)
 end
 

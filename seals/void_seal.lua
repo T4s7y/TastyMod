@@ -31,38 +31,48 @@ SMODS.Seal {
       } 
     }
   end,
-
   calculate = function(self, card, context)
     if context.main_scoring and context.cardarea == G.play then
-      if #G.consumeables.cards < G.consumeables.config.card_limit then
-        if pseudorandom("tarot") < (G.GAME.probabilities.normal or 1) / 2 then
+      if (#G.consumeables.cards + G.GAME.consumeable_buffer) < G.consumeables.config.card_limit then
+        if (pseudorandom("tarot")*2) < (G.GAME.probabilities.normal or 1) then
           G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
+
           G.E_MANAGER:add_event(Event({
+            trigger = 'before',
+            delay = 0.1,
             func = function()
-              local tarot_card = create_card("Tarot", G.consumeables, nil, nil, nil, nil, nil, "void")
+              local tarot_card = create_card("Tarot", G.consumeables, nil, nil, nil, nil, nil, "void_tarot")
               tarot_card:add_to_deck()
               G.consumeables:emplace(tarot_card)
-              G.GAME.consumeable_buffer = 0
+              G.GAME.consumeable_buffer = math.max(0, G.GAME.consumeable_buffer - 1)
               return true
             end
           }))
+
+          card_eval_status_text(card, 'extra', nil, nil, nil, { message = "+1", colour = G.C.PURPLE })
         end
       end
 
-      if #G.consumeables.cards < G.consumeables.config.card_limit then
-        if pseudorandom("spectral") < (G.GAME.probabilities.normal or 1) / 4 then
+      if (#G.consumeables.cards + G.GAME.consumeable_buffer) < G.consumeables.config.card_limit then
+        if (pseudorandom("spectral")*4) < (G.GAME.probabilities.normal or 1) then
           G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
+
           G.E_MANAGER:add_event(Event({
+            trigger = 'before',
+            delay = 0.1,
             func = function()
-              local spectral_card = create_card("Spectral", G.consumeables, nil, nil, nil, nil, nil, "void")
+              local spectral_card = create_card("Spectral", G.consumeables, nil, nil, nil, nil, nil, "void_spectral")
               spectral_card:add_to_deck()
               G.consumeables:emplace(spectral_card)
-              G.GAME.consumeable_buffer = 0
+              G.GAME.consumeable_buffer = math.max(0, G.GAME.consumeable_buffer - 1)
               return true
             end
           }))
+
+          card_eval_status_text(card, 'extra', nil, nil, nil, { message = "+1", colour = G.C.SECONDARY_SET.Spectral })
         end
       end
+
     end
   end
 }
