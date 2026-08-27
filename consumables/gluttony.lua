@@ -1,7 +1,14 @@
+SMODS.Atlas {
+  key = "tm_gluttony",
+  path = "gluttony.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Consumable {
   key = "gluttony", 
   set = "Spectral",
-  atlas = "tm_jokers", 
+  atlas = "tm_gluttony", 
   pos = { x = 0, y = 0 },
   loc_txt = {
     name = "Gluttony",

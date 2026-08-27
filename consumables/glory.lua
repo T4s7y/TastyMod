@@ -1,7 +1,14 @@
+SMODS.Atlas {
+  key = "tm_glory",
+  path = "glory.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Consumable {
   set = "Spectral",
   key = "glory",
-  atlas = "tm_jokers", 
+  atlas = "tm_glory", 
   pos = { x = 0, y = 0 },
   loc_txt = {
     name = "Glory",

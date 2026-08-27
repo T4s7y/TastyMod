@@ -7,7 +7,7 @@
 [X] **Grey**: +1x mult for every grey seal in deck (Must have grey seal to appear).<br>
 [X] **His Majesty**: If played hand contains exactly one card, attach an orange seal to it.
 [] **Skeleton**: **Bone** cards give x1.1 mult when scored. Counts as a **Bone** card<br>
-[] **Void Cat**: Upon pickup consume all **Void Seals** in the deck and obtain the following:<br> 
+[X] **Void Cat**: Upon pickup consume all **Void Seals** in the deck and obtain the following:<br> 
                  2 seals consumed: create a random **Legendary Joker**.<br>
                  4 seals consumed: enchant 2 random jokers with **Negative**.<br>
                  >6 seals consumed: this joker gains xmult based on the seals consumed.<br>

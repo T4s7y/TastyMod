@@ -1,7 +1,14 @@
+SMODS.Atlas {
+  key = "tm_dying_star",
+  path = "dying_star.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Consumable {
   key = "dying_star",
   set = "Spectral",
-  atlas = "tm_jokers",
+  atlas = "tm_dying_star",
   pos = { x = 0, y = 0 },
   cost = 4,
   unlocked = true,
