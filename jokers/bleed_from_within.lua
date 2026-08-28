@@ -1,6 +1,14 @@
+SMODS.Atlas {
+  key = "tm_bfw",
+  path = "bfw.png",
+  px = 71,
+  py = 95
+}
+
+
 SMODS.Joker {
   key = "bleed_from_within",
-  atlas = "tm_jokers",
+  atlas = "tm_bfw",
   pos = { x = 0, y = 0 },
   rarity = 2,
   cost = 5,

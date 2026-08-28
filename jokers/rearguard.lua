@@ -1,6 +1,14 @@
+SMODS.Atlas {
+  key = "tm_rearguard",
+  path = "rear_guard.png",
+  px=71,
+  py=95
+}
+
+
 SMODS.Joker {
   key = "rearguard",
-  atlas = "tm_jokers",
+  atlas = "tm_rearguard",
   pos = { x = 0, y = 0 },
   rarity = 1, 
   cost = 4,

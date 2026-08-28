@@ -1,10 +1,18 @@
+SMODS.Atlas {
+  key = "tm_la_pasion",
+  path = "la_pasion.png",
+  px = 71,
+  py = 95
+}
+
+
 SMODS.Joker {
   key = "la_pasion",
-  atlas = "tm_jokers",
+  atlas = "tm_la_pasion",
   loc_txt = {
     name = "La Pasion",
     text = {
-      "Gains {C:mult}+4{} Mult if played hand",
+      "Gains {C:mult}+3{} Mult if played hand",
       "contains a scoring {C:attention}Queen{}",
       "{C:inactive}(Currently {C:mult}+#1# Mult{})"
     }
@@ -36,7 +44,7 @@ SMODS.Joker {
       if has_queen then
         card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.mult_gain
         return {
-          message = "Upgraded!",
+          message = "La Pasion!",
           colour = G.C.MULT
         }
       end

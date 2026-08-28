@@ -1,6 +1,14 @@
+SMODS.Atlas {
+  key = "tm_alcoholic",
+  path = "alcoholic.png",
+  px = 71,
+  py = 95
+}
+
+
 SMODS.Joker {
   key = "alcoholic",
-  atlas = "tm_jokers",
+  atlas = "tm_alcoholic",
   pos = { x = 0, y = 0 },
   rarity = 3, 
   cost = 8,

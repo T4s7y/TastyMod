@@ -1,6 +1,14 @@
+SMODS.Atlas {
+  key = "tm_void_cat",
+  path = "void_cat.png",
+  px = 71,
+  py = 95
+}
+
+
 SMODS.Joker {
   key = "void_cat",
-  atlas = "tm_jokers",
+  atlas = "tm_void_cat",
   pos = { x = 0, y = 0 },
   rarity = 3,
   cost = 10,

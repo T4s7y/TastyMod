@@ -1,6 +1,14 @@
+SMODS.Atlas {
+  key = "tm_or_gate",
+  path = "or_gate.png",
+  px = 71,
+  py = 95
+}
+
+
 SMODS.Joker {
   key = 'or_gate',
-  atlas = 'tm_jokers', 
+  atlas = 'tm_or_gate', 
   pos = { x = 0, y = 0 },
   rarity = 2, 
   cost = 6,
