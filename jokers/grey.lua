@@ -10,7 +10,16 @@ SMODS.Joker {
   eternal_compat = true,
 
   config = { extra = { x_mult = 1.0 } },
-
+  in_pool = function(self, args)
+    if G.playing_cards then
+      for _, deck_card in ipairs(G.playing_cards) do
+        if deck_card.seal == "tm_grey_seal" then
+          return true
+        end
+      end
+    end
+    return false
+  end,
   loc_txt = {
     name = "Grey The Enormous",
     text = {

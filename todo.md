@@ -1,5 +1,4 @@
 ## Bugs
-[] Bloodlust counter getting messed up when immolate is used<br>
 [] Make Grey and Rock Hard appear only when the respective cards are present<br>
 
 ## Balance
@@ -19,26 +18,37 @@
                  4 seals consumed: enchant 2 random jokers with **Negative**.<br>
                  >6 seals consumed: this joker gains xmult based on the seals consumed.<br>
                  (Must have void seal to appear).<br>   
-[] **XOR Gate**: X3 mult if the bit wise xor of scored cards is equal a random 4 bit string that changes each round<br>
+[X] **XOR Gate**: X3 mult if the bit wise xor of scored cards is equal a random 4 bit string that changes each round<br>
+[X] **Monolith**: + 1.2x mult for every consecutive hand played that is not the previous or second previous hand.
+
 <br>
 ## Spectrals<br>
-[] **Glamour**: select up to 3 cards to enhance with a random enhancement.<br>
+[X] **Glamour**: select up to 3 cards to enhance with a random enhancement.<br>
 [X] **Summon Forth**: Draw all of your orange seal cards.<br>
 [X] **Glory**: select one 1 card to attach with an orange seal.<br>
 [X] **Dying Star**: select 1 card to attach with a void seal.<br>
+[] **Genesis**: select 1 card to attach with a clone seal<br>
 
 ## Seals
 [X] **Orange Seal**: +1$ +4 mult +30 chips per orange seal in deck. At the start of each ante gain **Summon Forth**<br>
 [X] **Void Seal**: 1 in 2 chance to create a random tarot card. 1 in 4 to create a random spectral (Must have room)<br>
+[] **Clone Seal**: Adds a copy of scored card in the deck (can be used once per round).<br>
 
 ## Enhancements
-[] **Bone**: Retrigger once for every other bone card used in scoring.<br>
+[X] **Bone**: Retrigger once for every other bone card used in scoring.<br>
+[] **Blood**: Gets stronger for each blood used on the same card.<br>
+[] **Loyal**: At the start of each round place this card on top of your deck.<br>
+
 
 # Consumable types
 ## **Scraps**
 Used for new card enhancements to avoid conflict with tarot cards.<br>
+[X] **Packs**<br>
+[] **Skip Tag**<br>
+[] **Voucher**<br>
 
 ## Scraps
-[] **Calcium**: Select 1 card to enchant with **Bone**<br>
-
+[X] **Calcium**: Select 1 card to enchant with **Bone**<br>
+[] **Thirst**: Select 1 card to enchant with **Blood**<br>
+[] **Royalty**: Select 1 card to enchant with **Loyal**
 

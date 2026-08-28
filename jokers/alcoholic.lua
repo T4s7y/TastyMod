@@ -41,8 +41,10 @@ SMODS.Joker {
   end,
 
   calculate = function(self, card, context)
-    if context.setting_blind and not context.blueprint then
-      card.ability.extra.target_hand = self:get_random_hand()
+    if context.end_of_round and not context.individual and not context.repetition and not context.blueprint then
+      if G.GAME.chips >= G.GAME.blind.chips then
+        card.ability.extra.target_hand = self:get_random_hand()
+      end
     end
 
     if context.joker_main and context.scoring_name == card.ability.extra.target_hand then

@@ -17,6 +17,17 @@ SMODS.Joker {
   discovered = true,
   blueprint_compat = true,
   eternal_compat = true,
+  in_pool = function(self, args)
+    if G.playing_cards then
+      for _, deck_card in ipairs(G.playing_cards) do
+        if deck_card.ability.effect == "Stone Card" then
+          return true
+        end
+      end
+    end
+    return false
+  end,
+
 
   loc_vars = function(self, info_queue, card)
     info_queue[#info_queue + 1] = G.P_CENTERS.m_stone

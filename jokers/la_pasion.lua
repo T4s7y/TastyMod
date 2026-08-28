@@ -9,7 +9,7 @@ SMODS.Joker {
       "{C:inactive}(Currently {C:mult}+#1# Mult{})"
     }
   },
-  config = { extra = { mult = 0, mult_gain = 4 } },
+  config = { extra = { mult = 0, mult_gain = 3 } },
   pos = { x = 0, y = 0 }, 
   rarity = 2,
   cost = 6,

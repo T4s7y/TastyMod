@@ -27,7 +27,8 @@ SMODS.load_file("jokers/beer.lua")()
 SMODS.load_file("jokers/alcoholic.lua")()
 SMODS.load_file("jokers/grey.lua")()
 SMODS.load_file("jokers/void_cat.lua")()
-SMODS.load_file("jokers/xor_gate.lua")()
+SMODS.load_file("jokers/or_gate.lua")()
+SMODS.load_file("jokers/monolith.lua")()
 
 
 -- Spectral Cards
@@ -42,4 +43,12 @@ SMODS.load_file("consumables/glamour.lua")()
 SMODS.load_file("seals/grey_seal.lua")()
 SMODS.load_file("seals/orange_seal.lua")()
 SMODS.load_file("seals/void_seal.lua")()
+
+-- Scraps
+--SMODS.load_file("consumable_types/scraps.lua")()
+--SMODS.load_file("consumables/calcium.lua")()
+
+-- Enhancements
+--SMODS.load_file("enhancements/bone.lua")()
+
 
