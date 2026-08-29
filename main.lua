@@ -4,7 +4,6 @@
 --- MOD_AUTHOR: Tasty
 --- MOD_DESCRIPTION: WHAT?
 
-
 SMODS.Atlas {
   key = "tm_jokers",
   path = "joker.png",
@@ -37,12 +36,14 @@ SMODS.load_file("consumables/glory.lua")()
 SMODS.load_file("consumables/summon_forth.lua")()
 SMODS.load_file("consumables/dying_star.lua")()
 SMODS.load_file("consumables/glamour.lua")()
+SMODS.load_file("consumables/genesis.lua")()
 
 
 -- Seals
 SMODS.load_file("seals/grey_seal.lua")()
 SMODS.load_file("seals/orange_seal.lua")()
 SMODS.load_file("seals/void_seal.lua")()
+SMODS.load_file("seals/clone_seal.lua")()
 
 -- Scraps
 --SMODS.load_file("consumable_types/scraps.lua")()
