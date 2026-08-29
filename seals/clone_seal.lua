@@ -9,7 +9,8 @@ SMODS.Seal {
   key = "clone_seal",
   atlas = "tm_clone_seal",
   pos = { x = 0, y = 0 },
-  badge_colour = SMODS.Gradient {
+  badge_colour = 
+  SMODS.Gradient {
     key = "red_to_blue",
     colours = {
       G.C.RED,
