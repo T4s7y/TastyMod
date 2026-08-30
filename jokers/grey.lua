@@ -16,6 +16,7 @@ SMODS.Joker {
   discovered = true,
   blueprint_compat = true,
   eternal_compat = true,
+  perish_compat = false,
 
   config = { extra = { x_mult = 1.0 } },
   in_pool = function(self, args)

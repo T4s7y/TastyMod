@@ -6,15 +6,15 @@
 
 ## Jokers
 [] **Skeleton**: **Bone** cards give x1.1 mult when scored. Counts as a **Bone** card<br>
-[] **Lackie**: 1 in 2 chance to give +10 mult 1 in 2 to give +30 chips 1 in 2 to lose $2<br>
-[] **Donut Hole**: all TastyMod jokers score X1.5 mult<br>
-[] **Emergency Slippers**: +25 chips if played hand contains a 3oak<br>
-[] **Gambler**: all played 7s are treated as lucky cards<br>
+[X] **Lackie**: 1 in 2 chance to give +10 mult 1 in 2 to give +30 chips 1 in 2 to lose $2<br>
+[X] **Donut Hole**: all TastyMod jokers score X1.5 mult<br>
+[X] **Emergency Slippers**: +20 chips if played hand contains a 3oak<br>
+[X] **Gambler**: all played 7s are treated as lucky cards<br>
 [] **Jimmy**: all other cat jokers give X2mult<br>
-[] **Psychic**: if played poker hand is [poker hand] create a random tarot card. poker hand changes every round<br>
-[] **Astrologist**: Gains 0.4x mult for each spectral card used this run.<br>
+[X] **Psychic**: if played poker hand is [poker hand] create a random tarot card. poker hand changes every round<br>
+[X] **Astrologist**: Gains 0.4x mult for each spectral card used this run.<br>
 [] **ID Card**: this joker scores x2 mult if the chip sum of scored cards is above 21<br>
-[] **Bank**: All money earned gets stored in this joker. Stored money increases by 20% at end of round. 
+[X] **Bank**: All money earned gets stored in this joker. Stored money increases by 20% at end of round. 
 Sell this joker to obtain all stored money<br>
 
 <br>

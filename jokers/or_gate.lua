@@ -7,8 +7,8 @@ SMODS.Atlas {
 
 
 SMODS.Joker {
-  key = 'or_gate',
-  atlas = 'tm_or_gate', 
+  key = "or_gate",
+  atlas = "tm_or_gate", 
   pos = { x = 0, y = 0 },
   rarity = 2, 
   cost = 6,
@@ -17,18 +17,18 @@ SMODS.Joker {
   blueprint_compat = true,
 
   loc_txt = {
-    name = 'OR Gate',
+    name = "OR Gate",
     text = {
-      '{X:mult,C:white}X3{} Mult if the bitwise {C:attention}OR{} sum',
-      'of scored cards equals {C:attention}#1#{},',
-      'target changes every round'
+      "{X:mult,C:white}X3{} Mult if the bitwise {C:attention}OR{} sum",
+      "of scored cards equals {C:attention}#1#{},",
+      "target changes every round"
     }
   },
 
   set_ability = function(self, card, initial, delay_sprites)
     card.ability.extra = {
       x_mult = 3,
-      target_val = math.floor(pseudorandom('bitwise_init') * 16), 
+      target_val = math.floor(pseudorandom("bitwise_init") * 16), 
     }
   end,
 
@@ -50,7 +50,7 @@ SMODS.Joker {
   calculate = function(self, card, context)
     if context.end_of_round and not context.individual and not context.repetition and not context.blueprint then
       if G.GAME.chips >= G.GAME.blind.chips then
-        card.ability.extra.target_val = math.floor(pseudorandom('bitwise_round') * 16)
+        card.ability.extra.target_val = math.floor(pseudorandom("bitwise_round") * 16)
 
         local target = card.ability.extra.target_val
         local str = ""
@@ -59,7 +59,7 @@ SMODS.Joker {
           str = str .. tostring(b)
         end
 
-        card_eval_status_text(card, 'extra', nil, nil, nil, {
+        card_eval_status_text(card, "extra", nil, nil, nil, {
           message = "Target: " .. str,
           colour = G.C.FILTER
         })
@@ -78,7 +78,7 @@ SMODS.Joker {
 
       if or_sum == card.ability.extra.target_val then
         return {
-          message = 'X3',
+          message = "X3",
           Xmult_mod = card.ability.extra.x_mult,
           colour = G.C.MULT
         }

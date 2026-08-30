@@ -3,6 +3,9 @@ SMODS.Consumable {
   set = 'Spectral',
   atlas = 'tm_jokers', 
   pos = { x = 0, y = 0 },
+  cost = 4,
+  unlocked = true,
+  discovered = true,
 
   loc_txt = {
     name = 'Glamour',

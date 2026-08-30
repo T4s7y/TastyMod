@@ -28,6 +28,13 @@ SMODS.load_file("jokers/grey.lua")()
 SMODS.load_file("jokers/void_cat.lua")()
 SMODS.load_file("jokers/or_gate.lua")()
 SMODS.load_file("jokers/monolith.lua")()
+SMODS.load_file("jokers/gambler.lua")()
+SMODS.load_file("jokers/emergency_slippers.lua")()
+SMODS.load_file("jokers/donut_hole.lua")()
+SMODS.load_file("jokers/lackie.lua")()
+SMODS.load_file("jokers/psychic.lua")()
+SMODS.load_file("jokers/astrologist.lua")()
+SMODS.load_file("jokers/bank.lua")()
 
 
 -- Spectral Cards

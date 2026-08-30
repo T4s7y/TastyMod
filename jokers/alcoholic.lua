@@ -19,7 +19,7 @@ SMODS.Joker {
 
   config = { 
     extra = { 
-      target_hand = "[Poker hand]" 
+      target_hand = "High Card" 
     } 
   },
 
@@ -51,6 +51,10 @@ SMODS.Joker {
     if context.end_of_round and not context.individual and not context.repetition and not context.blueprint then
       if G.GAME.chips >= G.GAME.blind.chips then
         card.ability.extra.target_hand = self:get_random_hand()
+        return {
+          message = "Reset!",
+          colour = G.C.FILTER
+        }
       end
     end
 

@@ -8,6 +8,7 @@ SMODS.Joker {
   discovered = true,
   blueprint_compat = false,
   eternal_compat = true,
+  perish_compat = false,
   loc_txt = {
     name = "Snowball",
     text = {

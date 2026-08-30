@@ -14,7 +14,7 @@ SMODS.Joker {
     text = {
       "Gains {C:mult}+3{} Mult if played hand",
       "contains a scoring {C:attention}Queen{}",
-      "{C:inactive}(Currently {C:mult}+#1# Mult{})"
+      "{C:inactive}(Currently {C:mult}+#1#{} {C:inactive}Mult)"
     }
   },
   config = { extra = { mult = 0, mult_gain = 3 } },
@@ -25,6 +25,7 @@ SMODS.Joker {
   discovered = true,
   blueprint_compat = true,
   eternal_compat = true,
+  perish_compat = false,
 
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult } }
