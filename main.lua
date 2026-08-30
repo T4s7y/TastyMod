@@ -35,6 +35,9 @@ SMODS.load_file("jokers/lackie.lua")()
 SMODS.load_file("jokers/psychic.lua")()
 SMODS.load_file("jokers/astrologist.lua")()
 SMODS.load_file("jokers/bank.lua")()
+SMODS.load_file("jokers/id_card.lua")()
+SMODS.load_file("jokers/introverted_joker.lua")()
+SMODS.load_file("jokers/cuck_chair.lua")()
 
 
 -- Spectral Cards
