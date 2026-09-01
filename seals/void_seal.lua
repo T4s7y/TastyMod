@@ -8,7 +8,16 @@ SMODS.Atlas {
 SMODS.Seal {
   key = "void_seal",
   atlas = "tm_void_seal",
-  badge_colour = HEX("2e004f"),
+  badge_colour = 
+  SMODS.Gradient {
+    key = "void_grad",
+    colours = {
+      HEX("47097d"),
+      HEX("000000")
+    },
+    cycle = 2,
+    interpolation = "trig"
+  },
   pos = { x = 0, y = 0 },
 
   loc_txt = {

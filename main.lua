@@ -56,10 +56,52 @@ SMODS.load_file("seals/void_seal.lua")()
 SMODS.load_file("seals/clone_seal.lua")()
 
 -- Scraps
---SMODS.load_file("consumable_types/scraps.lua")()
---SMODS.load_file("consumables/calcium.lua")()
+SMODS.load_file("consumable_types/scraps.lua")()
+SMODS.load_file("consumables/calcium.lua")()
+SMODS.load_file("consumables/thirst.lua")()
+SMODS.load_file("consumables/royalty.lua")()
+SMODS.load_file("consumables/irony.lua")()
+SMODS.load_file("consumables/eclipse.lua")()
+SMODS.load_file("consumables/technology.lua")()
+SMODS.load_file("consumables/gear.lua")()
+SMODS.load_file("consumables/greed.lua")()
 
 -- Enhancements
---SMODS.load_file("enhancements/bone.lua")()
+SMODS.load_file("enhancements/bone.lua")()
+SMODS.load_file("enhancements/blood.lua")()
+SMODS.load_file("enhancements/loyal.lua")()
+SMODS.load_file("enhancements/cosmic.lua")()
+SMODS.load_file("enhancements/mech.lua")()
+SMODS.load_file("enhancements/rare.lua")()
 
+SMODS.current_mod.reset_game_data = function()
+  G.GAME.loyalty_counter = 0
+  G.GAME.last_scrap_or_spectral = nil
+end
 
+local consumable_use_ref = Card.use_consumeable
+function Card.use_consumeable(self, area, copier)
+  if self.ability.set == "Spectral" or self.ability.set == "Scraps" then
+    if self.config.center.key ~= "c_tm_irony" then
+      G.GAME.last_scrap_or_spectral = self.config.center.key
+    end
+  end
+  return consumable_use_ref(self, area, copier)
+end
+
+local draw_ref = Card.draw
+function Card:draw(layer)
+  if self.config and self.config.center and self.config.center.key == "m_tm_blood" then
+    local tier = self.ability and self.ability.blood_tier or 1
+    local atlas_key = "tm_blood_tier_" .. math.min(3, tier)
+    if self.config.center.atlas ~= atlas_key then
+      if G.ASSET_ATLAS[atlas_key] then
+        self.config.center.atlas = atlas_key
+        if self.children and self.children.center then
+          self.children.center.atlas = G.ASSET_ATLAS[atlas_key]
+        end
+      end
+    end
+  end
+  draw_ref(self, layer)
+end

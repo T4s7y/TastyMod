@@ -31,10 +31,11 @@ while there is at least a king in hand<br>
 
 ## Enhancements
 [X] **Bone**: Retrigger once for every other bone card used in scoring.<br>
-[] **Blood**: Gets stronger for each blood used on the same card.<br>
-[] **Loyal**: At the start of each round place this card on top of your deck.<br>
-[] **Cosmic**: Create a random spectral card when this card is destroyed<br> 
-[] **Mech**: Create a copy of **Gear** when this card is scored<br>
+[X] **Blood**: Gets stronger for each blood used on the same card.<br>
+[X] **Loyal**: At the start of each round place this card on top of your deck.<br>
+[X] **Cosmic**: Create a random spectral card when this card is destroyed<br> 
+[X] **Mech**: Create a copy of **Gear** when this card is scored<br>
+[X] **Rare**: When this car gets scored 5 times destroy it and create a random rare joker<br>
 
 ## Consumable types
 **Scraps** <br>
@@ -45,11 +46,11 @@ Used for new card enhancements to avoid conflict with tarot cards.<br>
 
 ## Scraps
 [X] **Calcium**: Select 1 card to enchant with **Bone**<br>
-[] **Thirst**: Select 1 card to enchant with **Blood**<br>
-[] **Royalty**: Select 1 card to enchant with **Loyal**
-[] **Irony**: create a copy of the last played scrap or spectral card<br>
-[] **Eclipse**: select 1 card to enchant with **Cosmic**<br>
-[] **Technology**: select 1 card to enchant with **Mech**<br>
-[] **Gear**: destroy 1 selected card(can only appear from **Mech** cards)<br>
-
+[X] **Thirst**: Select 1 card to enchant with **Blood**<br>
+[X] **Royalty**: Select 1 card to enchant with **Loyal**
+[X] **Irony**: create a copy of the last played scrap or spectral card<br>
+[X] **Eclipse**: select 1 card to enchant with **Cosmic**<br>
+[X] **Technology**: select 1 card to enchant with **Mech**<br>
+[X] **Gear**: destroy 1 selected card(can only appear from **Mech** cards)<br>
+[X] **Greed**: select 1 card to enchant with **Rare**<br>
 

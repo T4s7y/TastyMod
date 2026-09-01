@@ -37,8 +37,8 @@ SMODS.Joker {
       "based on the number of seals consumed:",
       "{C:purple}2+ Seals:{} Spawn a random {C:legendary}Legendary Joker{}",
       "{C:purple}4+ Seals:{} Add {C:dark_edition}Negative{} to 2 random Jokers",
-      "{C:purple}6+ Seals:{} Gives {X:mult,C:white}X#1#{} Mult equal to",
-      "the amount of seals consumed",
+      "{C:purple}6+ Seals:{} This joker gains {X:mult,C:white}X#1#{} Mult",
+      "for each seal consumed",
       "{C:inactive}(Currently {X:mult,C:white}X#2#{} Mult){}"
     }
   },
