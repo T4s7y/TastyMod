@@ -1,7 +1,14 @@
+SMODS.Atlas {
+  key = "tm_calcium",
+  path = "calcium.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Consumable {
   key = "calcium",
   set = "Scraps", 
-  atlas = "tm_jokers", 
+  atlas = "tm_calcium", 
   pos = { x = 0, y = 0 },
   cost = 3,
   unlocked = true,
