@@ -1,7 +1,14 @@
+SMODS.Atlas {
+  key = "tm_thirst",
+  path = "thirst.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Consumable {
   key = "thirst",
   set = "Scraps",
-  atlas = "tm_jokers", 
+  atlas = "tm_thirst", 
   pos = { x = 0, y = 0 },
   cost = 3,
   unlocked = true,

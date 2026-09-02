@@ -1,6 +1,13 @@
+SMODS.Atlas {
+  key = "tm_donut",
+  path = "tasty_donut.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Joker {
   key = "tasty_donut", 
-  atlas = "tm_jokers",
+  atlas = "tm_donut",
   loc_txt = {
     name = "Tasty Donut",
     text = {

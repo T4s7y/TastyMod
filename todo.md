@@ -3,9 +3,10 @@
 
 ## Balance
 [] Maybe re work orange seals<br>
+[] Add use limits on mech cards(Gear is kinda busted)<br>
 
 ## Jokers
-[] **Skeleton**: **Bone** cards give x1.1 mult when scored. Counts as a **Bone** card<br>
+[X] **Skeleton**: **Bone** cards give x1.1 mult when scored. Counts as a **Bone** card<br>
 [X] **Lackie**: 1 in 2 chance to give +10 mult 1 in 2 to give +30 chips 1 in 2 to lose $2<br>
 [X] **Donut Hole**: all TastyMod jokers score X1.5 mult<br>
 [X] **Emergency Slippers**: +20 chips if played hand contains a 3oak<br>
@@ -19,6 +20,11 @@ Sell this joker to obtain all stored money<br>
 [X] **Introverted Joker** earn $1 for every discarded face card<br>
 [Χ] **Cuck Chair**This joker gains 0.5x mult for every hand played that contains a scoring queen and jack 
 while there is at least a king in hand<br>
+[] **Gym**: All other jokers gain +10 chips at the end of each round<br>
+[] **Progressive Overload**: This jokers gains +2 mult every time you score more than your most 
+scored hand this run
+[] **Patience** 0.75X mult. Gains 3x mult after 3 rounds. this joker is pinned to the right-most 
+slot<br>
 
 <br>
 ## Spectrals

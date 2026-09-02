@@ -38,6 +38,7 @@ SMODS.load_file("jokers/bank.lua")()
 SMODS.load_file("jokers/id_card.lua")()
 SMODS.load_file("jokers/introverted_joker.lua")()
 SMODS.load_file("jokers/cuck_chair.lua")()
+SMODS.load_file("jokers/skeleton.lua")()
 
 
 -- Spectral Cards
@@ -75,7 +76,9 @@ SMODS.load_file("enhancements/mech.lua")()
 SMODS.load_file("enhancements/rare.lua")()
 
 SMODS.current_mod.reset_game_data = function()
+  -- Loyal card counter
   G.GAME.loyalty_counter = 0
+  -- Keeping track for Irony
   G.GAME.last_scrap_or_spectral = nil
 end
 
@@ -89,6 +92,7 @@ function Card.use_consumeable(self, area, copier)
   return consumable_use_ref(self, area, copier)
 end
 
+-- Updating blood sprites in deck view
 local draw_ref = Card.draw
 function Card:draw(layer)
   if self.config and self.config.center and self.config.center.key == "m_tm_blood" then

@@ -5,7 +5,6 @@ SMODS.Atlas {
   py = 95
 }
 
-
 SMODS.Enhancement {
   key = "bone",
   atlas = "tm_bone", 
@@ -16,7 +15,7 @@ SMODS.Enhancement {
     name = "Bone Card",
     text = {
       "Retrigger {C:attention}1{} additional time",
-      "for each other {C:attention} Bone Card{}",
+      "for each other {C:attention}Bone Card{}",
       "used in scoring"
     }
   },
@@ -29,6 +28,14 @@ SMODS.Enhancement {
         for i = 1, #context.scoring_hand do
           local scoring_card = context.scoring_hand[i]
           if scoring_card ~= card and scoring_card.config.center and scoring_card.config.center.key == 'm_tm_bone' then
+            bone_count = bone_count + 1
+          end
+        end
+      end
+
+      if G.jokers and G.jokers.cards then
+        for _, joker in ipairs(G.jokers.cards) do
+          if joker.config.center.key == "j_tm_skeleton" and not joker.debuff then
             bone_count = bone_count + 1
           end
         end
