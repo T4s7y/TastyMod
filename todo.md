@@ -25,6 +25,8 @@ while there is at least a king in hand<br>
 scored hand this run
 [] **Patience** 0.75X mult. Gains 3x mult after 3 rounds. this joker is pinned to the right-most 
 slot<br>
+[] **Engineer** Mech cards now give Gear+ when scored (destroy cards intead(basically hanged man))
+
 
 <br>
 ## Spectrals
@@ -41,7 +43,7 @@ slot<br>
 [X] **Loyal**: At the start of each round place this card on top of your deck.<br>
 [X] **Cosmic**: Create a random spectral card when this card is destroyed<br> 
 [X] **Mech**: Create a copy of **Gear** when this card is scored<br>
-[X] **Rare**: When this car gets scored 5 times destroy it and create a random rare joker<br>
+[X] **Rare**: When this card gets scored 5 times destroy it and create a random rare joker<br>
 
 ## Consumable types
 **Scraps** <br>
