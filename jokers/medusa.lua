@@ -1,6 +1,13 @@
+SMODS.Atlas {
+  key = "tm_medusa",
+  path = "medusa.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Joker {
   key = "medusa",
-  atlas = "tm_jokers",
+  atlas = "tm_medusa",
   loc_txt = {
     name = "Medusa",
     text = {

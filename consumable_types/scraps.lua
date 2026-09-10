@@ -27,7 +27,7 @@ SMODS.Booster {
   weight = 0.8,
 
   create_card = function(self, card)
-    return create_card("Scraps", G.pack_cards, nil, nil, true, true, "nil", "scrap_pack")
+    return create_card("Scraps", G.pack_cards, nil, nil, true, true, nil, "scrap_pack")
   end,
 
   loc_txt = {
@@ -48,6 +48,12 @@ SMODS.Booster {
   end,
 
   particles = function(self)
+    if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.STANDARD_PACK then
+    else
+      if G.hand and #G.hand.cards == 0 and G.deck and #G.deck.cards > 0 then
+        G.FUNCS.draw_from_deck_to_hand()
+      end
+    end
   end
 }
 
@@ -62,7 +68,7 @@ SMODS.Booster {
   weight = 0.6,
 
   create_card = function(self, card)
-    return create_card("Scraps", G.pack_cards, nil, nil, true, true, "nil", "jumbo_scrap")
+    return create_card("Scraps", G.pack_cards, nil, nil, true, true, nil, "jumbo_scrap")
   end,
 
   loc_txt = {
@@ -83,6 +89,12 @@ SMODS.Booster {
   end,
 
   particles = function(self)
+    if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.STANDARD_PACK then
+    else
+      if G.hand and #G.hand.cards == 0 and G.deck and #G.deck.cards > 0 then
+        G.FUNCS.draw_from_deck_to_hand()
+      end
+    end
   end
 }
 
@@ -97,7 +109,7 @@ SMODS.Booster {
   weight = 0.4,
 
   create_card = function(self, card)
-    return create_card("Scraps", G.pack_cards, nil, nil, true, true, "nil", "mega_scrap")
+    return create_card("Scraps", G.pack_cards, nil, nil, true, true, nil, "mega_scrap")
   end,
 
   loc_txt = {
@@ -118,5 +130,11 @@ SMODS.Booster {
   end,
 
   particles = function(self)
+    if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.STANDARD_PACK then
+    else
+      if G.hand and #G.hand.cards == 0 and G.deck and #G.deck.cards > 0 then
+        G.FUNCS.draw_from_deck_to_hand()
+      end
+    end
   end
 }

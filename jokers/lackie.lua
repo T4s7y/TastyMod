@@ -1,6 +1,13 @@
+SMODS.Atlas {
+  key = "tm_lackie",
+  path = "lackie.png",
+  px = 71,
+  py = 95
+}
+
 SMODS.Joker {
   key = "lackie",
-  atlas = "tm_jokers",
+  atlas = "tm_lackie",
   pos = { x = 0, y = 0 },
   rarity = 1,
   cost = 4,
@@ -21,7 +28,8 @@ SMODS.Joker {
     text = {
       "{C:green}#1# in 2{} chance for {C:mult}+#2#{} Mult",
       "{C:green}#1# in 2{} chance for {C:chips}+#3#{} Chips",
-      "{C:green}#1# in 2{} chance to lose {C:money}$#4#{}"
+      "{C:green}#1# in 2{} chance to lose {C:money}$#4#{}",
+      "{C:green}#1# in 10{} chance to {C:attention}crash the game{}"
     }
   },
 
@@ -38,6 +46,9 @@ SMODS.Joker {
 
   calculate = function(self, card, context)
     if context.joker_main then
+      if pseudorandom("lackie_crash") < G.GAME.probabilities.normal / 10 then
+        error("He munched the keys")
+      end
       local mult_gain = 0
       local chip_gain = 0
 

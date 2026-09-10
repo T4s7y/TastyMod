@@ -112,36 +112,38 @@ function Card:draw(layer)
 end
 
 -- Fever Dream Helpers
-local fever_dream_processing = false
 local set_debuff_ref = Card.set_debuff
 function Card:set_debuff(should_debuff)
-  local was_debuffed = self.debuff
-  set_debuff_ref(self, should_debuff)
-  if not fever_dream_processing and not was_debuffed and self.debuff then
-    if self.area and self.area == G.jokers then
-      fever_dream_processing = true
-      if G.jokers and G.jokers.cards then
-        for _, j in ipairs(G.jokers.cards) do
-          if j ~= self and j.config and j.config.center and j.config.center.key == "j_tm_fever_dream" and not j.debuff then
-            local payout = (j.ability and j.ability.extra and j.ability.extra.dollars) or 10
-            ease_dollars(payout)
+  if self.ability and self.ability.custom_debuff then
+    should_debuff = true
+  end
 
-            G.E_MANAGER:add_event(Event({
-              func = function()
-                j:juice_up(0.5, 0.5)
-                play_sound("coin1")
-                return true
-              end
-            }))
-            card_eval_status_text(j, "extra", nil, nil, nil, {
-              message = "$" .. payout,
-              colour = G.C.MONEY
-            })
-          end
+  local was_debuffed = self.debuff
+  
+  set_debuff_ref(self, should_debuff)
+
+  if not was_debuffed and self.debuff and self.area == G.jokers then
+    if G.jokers and G.jokers.cards then
+      for _, j in ipairs(G.jokers.cards) do
+        if j ~= self and j.config and j.config.center and j.config.center.key == "j_tm_fever_dream" and not j.debuff then
+          local payout = (j.ability and j.ability.extra and j.ability.extra.dollars) or 10
+
+          ease_dollars(payout)
+
+          G.E_MANAGER:add_event(Event({
+            func = function()
+              j:juice_up(0.5, 0.5)
+              play_sound("coin1")
+              return true
+            end
+          }))
+
+          card_eval_status_text(j, "extra", nil, nil, nil, {
+            message = "$" .. payout,
+            colour = G.C.MONEY
+          })
         end
       end
-
-      fever_dream_processing = false
     end
   end
 end
