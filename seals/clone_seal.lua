@@ -11,7 +11,7 @@ SMODS.Seal {
   pos = { x = 0, y = 0 },
   badge_colour = 
   SMODS.Gradient {
-    key = "red_to_blue",
+    key = "red_to_blue_badge",
     colours = {
       G.C.RED,
       G.C.BLUE  

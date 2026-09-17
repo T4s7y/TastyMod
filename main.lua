@@ -45,7 +45,6 @@ SMODS.load_file("jokers/fever_dream.lua")()
 -- Spectral Cards
 SMODS.load_file("consumables/gluttony.lua")()
 SMODS.load_file("consumables/glory.lua")()
-SMODS.load_file("consumables/summon_forth.lua")()
 SMODS.load_file("consumables/dying_star.lua")()
 SMODS.load_file("consumables/glamour.lua")()
 SMODS.load_file("consumables/genesis.lua")()
@@ -76,6 +75,7 @@ SMODS.load_file("enhancements/cosmic.lua")()
 SMODS.load_file("enhancements/mech.lua")()
 SMODS.load_file("enhancements/rare.lua")()
 
+-- Helpers
 SMODS.current_mod.reset_game_data = function()
   -- Loyal card counter
   G.GAME.loyalty_counter = 0
@@ -147,3 +147,4 @@ function Card:set_debuff(should_debuff)
     end
   end
 end
+

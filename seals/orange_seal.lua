@@ -16,14 +16,12 @@ SMODS.Seal {
       "Gives {C:money}+$1{}, {C:mult}+3{} Mult,",
       "and {C:chips}+20{} Chips for each card",
       "with an {C:attention}Orange Seal{} in your deck",
-      "{C:inactive}(Currently {C:money}+$#1#{}, {C:mult}+#2#{} Mult, {C:chips}+#3#{} Chips)",
-      "After beating the {C:attention}Boss Blind{}",
-      "gain {C:spectral}Summon Forth{}"
+      "{C:inactive}(Currently {C:money}+$#1#{}, {C:mult}+#2#{} Mult, {C:chips}+#3#{} Chips)"
     }
   },
   pos = { x = 0, y = 0 },
 
-loc_vars = function(self, info_queue, card)
+  loc_vars = function(self, info_queue, card)
     if info_queue and G.P_CENTERS and G.P_CENTERS.c_tm_summon_forth then
       info_queue[#info_queue + 1] = G.P_CENTERS.c_tm_summon_forth
     end

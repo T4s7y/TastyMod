@@ -5,6 +5,16 @@ SMODS.Atlas {
   py = 95
 }
 
+SMODS.Gradient {
+  key = "void_grad",
+  colours = {
+    HEX("47097d"),
+    HEX("000000")
+  },
+  cycle = 2,
+  interpolation = "trig"
+}
+
 SMODS.Consumable {
   key = "dying_star",
   set = "Spectral",
@@ -17,7 +27,7 @@ SMODS.Consumable {
   loc_txt = {
     name = "Dying Star",
     text = {
-      "Add a {C:purple}Void Seal{}",
+      "Add a {C:tm_void_grad}Void Seal{}",
       "to {C:attention}1{} selected card",
       "in your hand"
     }

@@ -32,7 +32,7 @@ SMODS.Joker {
   loc_txt = {
     name = "Void Cat",
     text = {
-      "When acquired, consume all {C:purple}Void Seals{}",
+      "When acquired, consume all {C:tm_void_grad}Void Seals{}",
       "from your deck and gain effects",
       "based on the number of seals consumed:",
       "{C:purple}2+ Seals:{} Spawn a random {C:legendary}Legendary Joker{}",

@@ -1,3 +1,13 @@
+SMODS.Gradient {
+  key = "red_to_blue",
+  colours = {
+    G.C.RED,
+    G.C.BLUE  
+  },
+  cycle = 2,           
+  interpolation = 'trig'
+}
+
 SMODS.Consumable {
   key = "genesis",
   set = "Spectral",
@@ -9,7 +19,7 @@ SMODS.Consumable {
   loc_txt = {
     name = "Genesis",
     text = {
-      "Add a {C:attention}Clone Seal{} to",
+      "Add a {C:tm_red_to_blue}Clone Seal{} to",
       "{C:attention}1{} selected card in hand"
     }
   },

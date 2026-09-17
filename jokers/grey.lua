@@ -33,7 +33,7 @@ SMODS.Joker {
     name = "Grey The Enormous",
     text = {
       "This joker gains {X:mult,C:white}x1{} mult",
-      "for every {C:attention}Grey Seal{} in the deck",
+      "for every {C:808080}Grey Seal{} in the deck",
       "{C:inactive}(Currently {X:mult,C:white}x#1#{} Mult)"
     }
   },
