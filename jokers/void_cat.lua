@@ -1,6 +1,6 @@
 SMODS.Atlas {
   key = "tm_void_cat",
-  path = "void_cat.png",
+  path = "blackie.png",
   px = 71,
   py = 95
 }
